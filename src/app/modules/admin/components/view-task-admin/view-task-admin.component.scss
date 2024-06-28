@@ -1,0 +1,73 @@
+.task-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    background-color: #f8f8f8;
+    min-height: 37vh;
+    padding: 20px;
+}
+
+.task-card {
+    // width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.task-details {
+    padding: 20px;
+}
+
+.task-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #108ee9;
+    margin-bottom: 10px;
+}
+
+.task-description {
+    margin-bottom: 10px;
+}
+
+.task-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.info-row {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.info-label {
+    font-weight: bold; /* corrected font weight */
+    margin-right: 5px;
+}
+
+.info-value {
+    font-weight: normal;
+}
+
+.comment-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.comment-input {
+    width: 100%;
+}
+
+.comment-input.mat-input-element {
+    color: inherit !important; /* Keep the input text color the same */
+}
+
+button[color="primary"] {
+    margin-top: 10px;
+}

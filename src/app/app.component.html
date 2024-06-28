@@ -1,0 +1,15 @@
+<div>
+  <mat-toolbar color="primary" class="navbar">
+    <span *ngIf="!isAdminLoggedIn && !isEmployeeLoggedIn" class="navbar-brand">Task Management System</span>
+    <span *ngIf="isAdminLoggedIn" class="navbar-brand">ADMIN</span>
+    <span *ngIf="isEmployeeLoggedIn" class="navbar-brand">EMPLOYEE</span>
+    <span class="spacer"></span>
+    <button *ngIf="!isAdminLoggedIn && !isEmployeeLoggedIn" mat-button routerLink="/signup" routerLinkActive="active">Register</button>
+    <button *ngIf="!isAdminLoggedIn && !isEmployeeLoggedIn" mat-button routerLink="/login" routerLinkActive="active">Login</button>
+    <button *ngIf="isAdminLoggedIn"  mat-button routerLink="/admin/dashboard" routerLinkActive="active">Dasboard</button>
+    <button *ngIf="isAdminLoggedIn" mat-button routerLink="/admin/tasks" routerLinkActive="active">Post Task</button>
+    <button *ngIf="isEmployeeLoggedIn" mat-button routerLink="/employee/dashboard" routerLinkActive="active">Dasboard</button>
+    <button *ngIf="isAdminLoggedIn || isEmployeeLoggedIn" mat-button (click)="logout()" routerLinkActive="active">Logout</button>
+  </mat-toolbar>
+</div>
+<router-outlet></router-outlet>

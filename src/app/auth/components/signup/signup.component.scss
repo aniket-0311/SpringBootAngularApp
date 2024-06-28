@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-card {
+    width: 400px;
+    max-width: 80%; /* Adjust maximum width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+  
